@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <header className="grid-container bg-Hero bg-clip-border bg-cover h-screen hero">
+    <main className="grid-container bg-Hero bg-clip-border bg-cover h-screen hero" >
       <div className="col-start-2 col-end-3  max-w-xs -mt-20 px-3 ">
         <h1 className="text-3xl font-semibold mb-4">
           The purpose is to teach, bring learning to people
@@ -31,6 +31,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </header>
+    </main>
   );
 }

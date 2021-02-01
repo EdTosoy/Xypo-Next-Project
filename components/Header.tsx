@@ -4,7 +4,7 @@ export default function Header() {
   const nav = [
     {
       name: "Home",
-      id: "Home",
+      id: "",
     },
     {
       name: "About",
@@ -28,7 +28,7 @@ export default function Header() {
     },
   ];
   return (
-    <header className="grid-container border-b sticky top-0 bg-white ">
+    <header className="grid-container border-b z-50 sticky top-0 bg-white ">
       <div className="col-start-2 col-end-3  p-3  flex  justify-between items-center ">
         <div className="">
           <a href="#">

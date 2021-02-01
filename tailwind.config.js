@@ -5,13 +5,15 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         Hero: "url('/images/background.png')",
-
-        "footer-texture": "url('/img/footer-texture.png')",
+        About: "url('/images/about.png')",
       }),
-
       colors: {
         pink: "#fab3c4",
         darkPink: "#e2899e",
+      },
+
+      zIndex: {
+        "-10": "-10",
       },
     },
   },
