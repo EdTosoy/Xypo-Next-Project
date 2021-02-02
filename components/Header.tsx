@@ -4,7 +4,7 @@ export default function Header() {
   const nav = [
     {
       name: "Home",
-      id: "",
+      id: "Home",
     },
     {
       name: "About",
@@ -32,7 +32,7 @@ export default function Header() {
       <div className="col-start-2 col-end-3  p-3  flex  justify-between items-center ">
         <div className="">
           <a href="#">
-            <Image src="/images/logo.png" width={80} height={40} />
+            <Image src="/images/logo.png" width={80} height={40} alt="logo" />
           </a>
         </div>
         <div className="hidden md:flex">

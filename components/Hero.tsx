@@ -1,8 +1,7 @@
-import Image from "next/image";
-
 export default function Hero() {
+  const icons = ["facebook", "twitter", "instagram", "linkedin"];
   return (
-    <main className="grid-container bg-Hero bg-clip-border bg-cover h-screen hero" >
+    <main className="grid-container bg-Hero bg-clip-border bg-cover h-screen hero" id="Home">
       <div className="col-start-2 col-end-3  max-w-xs -mt-20 px-3 ">
         <h1 className="text-3xl font-semibold mb-4">
           The purpose is to teach, bring learning to people
@@ -17,18 +16,14 @@ export default function Hero() {
           Read More
         </button>
         <div className="mt-5 flex gap-4">
-          <div className="p-2 hover:bg-gray-200 rounded-full cursor-pointer grid place-content-center">
-            <box-icon name="facebook" color="#e2899e" type="logo"></box-icon>
-          </div>
-          <div className="p-2 hover:bg-gray-200 rounded-full cursor-pointer grid place-content-center">
-            <box-icon name="twitter" color="#e2899e" type="logo"></box-icon>
-          </div>
-          <div className="p-2 hover:bg-gray-200 rounded-full cursor-pointer grid place-content-center">
-            <box-icon name="instagram" color="#e2899e" type="logo"></box-icon>
-          </div>
-          <div className="p-2 hover:bg-gray-200 rounded-full cursor-pointer grid place-content-center">
-            <box-icon name="linkedin" color="#e2899e" type="logo"></box-icon>
-          </div>
+          {icons.map((icon) => (
+            <div
+              className="p-2 hover:bg-gray-200 rounded-full cursor-pointer grid place-content-center"
+              key={icon}
+            >
+              <box-icon name={icon} color="#e2899e" type="logo"></box-icon>
+            </div>
+          ))}
         </div>
       </div>
     </main>
