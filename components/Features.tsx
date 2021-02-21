@@ -20,10 +20,13 @@ export default function Features() {
   ];
 
   return (
-    <section className="grid-container pt-20 pb-10" id="Features" >
+    <section className="grid-container pt-20 pb-10" id="Features">
       <main className="col-start-2 col-end-2 grid md:grid-cols-3 gap-4">
-        {features.map(({ text, name, image }) => (
-          <div className="bg-white rounded-lg p-4 border shadow-md text-center mb-10">
+        {features.map(({ text, name, image }, index) => (
+          <div
+            className="bg-white rounded-lg p-4 border shadow-md text-center mb-10"
+            key={index}
+          >
             <div className="">
               <Image src={image} width={150} height={100} alt={name} />
             </div>

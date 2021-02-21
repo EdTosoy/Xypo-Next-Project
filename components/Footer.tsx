@@ -25,13 +25,17 @@ export default function Footer() {
   return (
     <footer className="grid-container">
       <div className="col-start-2 col-end-2 border-t border-darkPink pt-20  grid grid-cols-2 md:grid-cols-4 ">
-        {footerLink.map(({ title, sub1, sub2 }) => (
-          <div className="mb-4">
+        {footerLink.map(({ title, sub1, sub2 }, index) => (
+          <div className="mb-4" key={index}>
             <h1 className="mb-4 text-darkPink font-semibold text-xl">
               {title}
             </h1>
-            <p className="mb-2 hover:text-darkPink cursor-pointer capitalize">{sub1}</p>
-            <p className="mb-2 hover:text-darkPink cursor-pointer capitalize">{sub2}</p>
+            <p className="mb-2 hover:text-darkPink cursor-pointer capitalize">
+              {sub1}
+            </p>
+            <p className="mb-2 hover:text-darkPink cursor-pointer capitalize">
+              {sub2}
+            </p>
           </div>
         ))}
       </div>
